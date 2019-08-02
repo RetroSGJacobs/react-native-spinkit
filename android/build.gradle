@@ -13,6 +13,8 @@ repositories {
 
 buildscript {
     repositories {
+        google()
+        jcenter()
         mavenCentral()
         maven {
             url "https://jitpack.io"
@@ -24,12 +26,12 @@ buildscript {
 }
 
 android {
-    compileSdkVersion  safeExtGet('compileSdkVersion', 23)
-    buildToolsVersion  safeExtGet('buildToolsVersion', "23.0.1")
+    compileSdkVersion  safeExtGet('compileSdkVersion', 27)
+    buildToolsVersion  safeExtGet('buildToolsVersion', "27.0.3")
 
     defaultConfig {
         minSdkVersion  safeExtGet('minSdkVersion', 16)
-        targetSdkVersion safeExtGet('targetSdkVersion', 23)
+        targetSdkVersion safeExtGet('targetSdkVersion', 27)
         versionCode 1
         versionName "1.0"
     }
